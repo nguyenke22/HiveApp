@@ -1,0 +1,10 @@
+play
+pause
+skip turn
+forfeit
+quit
+pull up rules
+select piece
+deselect piece
+place piece
+undo move
