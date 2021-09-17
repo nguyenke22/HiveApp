@@ -104,6 +104,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/PlayableAreaLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
@@ -111,7 +112,7 @@
                 <TextView
                     android:id="@+id/PlayerOneTextView"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:gravity="top|left"
                     android:padding="10sp"
@@ -119,9 +120,16 @@
                     android:textSize="20sp" />
 
                 <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="10"
+                    android:text="PlaceHolder" />
+
+                <TextView
                     android:id="@+id/playerTwoTextView"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:gravity="right|top"
                     android:padding="10sp"
