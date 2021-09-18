@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">HiveApp</string>
+    <string name="turn_banner">Your Turn</string>
+    <string name="quit_text">Quit</string>
+    <string name="play_text">Play Again</string>
+    <string name="skip_turn_text">Skip Turn</string>
+    <string name="undo_move_move">Undo Move</string>
+    <string name="player_one_text">Player 1</string>
+    <string name="player_two_text">Player 2</string>
+
 </resources>

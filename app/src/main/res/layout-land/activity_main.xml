@@ -43,7 +43,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="#00BCD4"
                         android:padding="5sp"
-                        android:text="Play" />
+                        android:text="@string/play_text" />
 
                     <Button
                         android:id="@+id/QuitButton"
@@ -52,7 +52,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="#00BCD4"
                         android:padding="5sp"
-                        android:text="Quit" />
+                        android:text="@string/quit_text" />
 
                 </LinearLayout>
 
@@ -70,7 +70,7 @@
                         android:layout_weight="20"
                         android:gravity="center"
                         android:padding="10sp"
-                        android:text="HIVE"
+                        android:text="@string/turn_banner"
                         android:textColor="#F44336"
                         android:textSize="42sp" />
                 </LinearLayout>
@@ -89,7 +89,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="#00BCD4"
                         android:padding="5sp"
-                        android:text="Skip turn" />
+                        android:text="@string/skip_turn_text" />
 
                     <Button
                         android:id="@+id/undoButton"
@@ -98,7 +98,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="#00BCD4"
                         android:padding="5sp"
-                        android:text="Undo Move" />
+                        android:text="@string/undo_move_move" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -109,32 +109,58 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/PlayerOneTextView"
+                <LinearLayout
+                    android:id="@+id/playerOneLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="top|left"
-                    android:padding="10sp"
-                    android:text="Player 1"
-                    android:textSize="20sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/PlayerOneTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|left"
+                        android:padding="10sp"
+                        android:text="@string/player_one_text"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/playerOneHolder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/hive_piece_holder" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="10"
                     android:text="PlaceHolder" />
 
-                <TextView
-                    android:id="@+id/playerTwoTextView"
+                <LinearLayout
+                    android:id="@+id/playerTwoLayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="right|top"
-                    android:padding="10sp"
-                    android:text="Player 2"
-                    android:textSize="20sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/playerTwoTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|top"
+                        android:padding="10sp"
+                        android:text="@string/player_two_text"
+                        android:textSize="20sp" />
+                    <ImageView
+                        android:id="@+id/playerTwoHolder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/hive_piece_holder" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
