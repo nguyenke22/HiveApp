@@ -10,26 +10,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <SurfaceView
-            android:id="@+id/hiveSurfaceView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="#FFFFFF"
-            android:background="@drawable/honeycomb"/>
-
         <LinearLayout
+            android:id="@+id/mainGameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/interfaceLinearLayout"
+                android:id="@+id/interfaceLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/leftButtonsLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -57,6 +52,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/centerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -64,7 +60,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/titleTextView"
+                        android:id="@+id/currentTurnTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="20"
@@ -76,6 +72,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/rightButtonsLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -132,12 +129,13 @@
                         android:background="@drawable/hive_piece_holder" />
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="10"
-                    android:text="PlaceHolder" />
+                <SurfaceView
+                    android:id="@+id/hiveSurfaceView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/honeycomb"
+                    android:backgroundTint="#FFFFFF" />
 
                 <LinearLayout
                     android:id="@+id/playerTwoLayout"
@@ -154,6 +152,7 @@
                         android:padding="10sp"
                         android:text="@string/player_two_text"
                         android:textSize="20sp" />
+
                     <ImageView
                         android:id="@+id/playerTwoHolder"
                         android:layout_width="match_parent"
