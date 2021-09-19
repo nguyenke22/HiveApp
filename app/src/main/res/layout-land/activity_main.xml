@@ -122,11 +122,73 @@
                         android:text="@string/player_one_text"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/playerOneHolder"
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/hive_piece_holder" />
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/playerOneHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/hive_piece_holder" />
+
+                        <ImageView
+                            android:id="@+id/beeP1Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleType="fitStart"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            app:srcCompat="@drawable/bensonbeehexcropped" />
+
+                        <ImageView
+                            android:id="@+id/antP1Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            app:srcCompat="@drawable/anthexcropped" />
+
+                        <ImageView
+                            android:id="@+id/spiderP1Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            android:translationY="120dp"
+                            app:srcCompat="@drawable/spiderhexcropped" />
+
+                        <ImageView
+                            android:id="@+id/beetleP1Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            android:translationY="355dp"
+                            app:srcCompat="@drawable/beetlehexcropped" />
+
+                        <ImageView
+                            android:id="@+id/grasshopperP1Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            app:srcCompat="@drawable/grasshopperhexcropped" />
+                    </FrameLayout>
+
                 </LinearLayout>
 
                 <SurfaceView
@@ -153,11 +215,73 @@
                         android:text="@string/player_two_text"
                         android:textSize="20sp" />
 
-                    <ImageView
-                        android:id="@+id/playerTwoHolder"
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/hive_piece_holder" />
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/playerTwoHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/hive_piece_holder" />
+
+                        <ImageView
+                            android:id="@+id/beeP2Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleType="fitStart"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            app:srcCompat="@drawable/bensonbeehexcropped" />
+
+                        <ImageView
+                            android:id="@+id/antP2Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            app:srcCompat="@drawable/anthexcropped" />
+
+                        <ImageView
+                            android:id="@+id/spiderP2Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            android:translationY="120dp"
+                            app:srcCompat="@drawable/spiderhexcropped" />
+
+                        <ImageView
+                            android:id="@+id/beetleP2Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            android:translationY="355dp"
+                            app:srcCompat="@drawable/beetlehexcropped" />
+
+                        <ImageView
+                            android:id="@+id/grasshopperP2Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"
+                            app:srcCompat="@drawable/grasshopperhexcropped" />
+                    </FrameLayout>
+
                 </LinearLayout>
 
             </LinearLayout>
