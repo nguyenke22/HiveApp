@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //creates the surface view for drawing hexagons on the playable game area
         HiveSurfaceView hiveSurfaceView = (HiveSurfaceView) findViewById(R.id.hiveSurfaceView);
     }
 
